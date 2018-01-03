@@ -1,5 +1,7 @@
 package ng_labo.nglogger;
 
+import android.content.Context;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;

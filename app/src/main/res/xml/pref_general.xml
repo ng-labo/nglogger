@@ -1,0 +1,68 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_device_name"
+        android:inputType="textCapWords"
+        android:key="pref_device_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_device_name" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:key="pref_server_url"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Logging server URL" />
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:defaultValue="2000"
+        android:inputType="textCapWords"
+        android:key="pref_postSizeMax"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Trigger size for post" />
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:defaultValue="10"
+        android:inputType="textCapWords"
+        android:key="pref_thresold_step"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Threshold for detecting step" />
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:defaultValue="20"
+        android:inputType="textCapWords"
+        android:key="pref_thresold_sensing_motion"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Threshold for sensing motion" />
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_dbglog_list_entries"
+        android:entryValues="@array/pref_dbglog_list_values"
+        android:key="pref_dbglog"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_dbglog_title" />
+
+</PreferenceScreen>
